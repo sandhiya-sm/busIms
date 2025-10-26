@@ -8,6 +8,7 @@
     font-size: x-large;
     color: steelblue;"
 ><h1>BLOG</h1></center></div>
+
             <div class="container">
                 <div class="post">
                     <a href="#" class="post-link"></a>

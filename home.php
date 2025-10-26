@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.22.css">
   <title>My Website</title>
 </head>
-
 <body>
   <!-- Header -->
   <section id="header">
@@ -193,5 +192,4 @@
   <!-- End Footer -->
   <script src="./page2.js"></script>
 </body>
-
 </html>

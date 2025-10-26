@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /project/public/
+    
+    # Prevent direct access to certain files
+    RewriteRule ^core/ - [F]
+    RewriteRule ^uploads/ - [F]
+    
+    # Redirect all requests to index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+</IfModule>
+
+# Security headers
+<FilesMatch "\.php$">
+    SetEnv PHPRC /usr/local/lib/php.ini
+</FilesMatch>
+
+# Prevent access to sensitive files
+<FilesMatch "^(config|database|helpers)\.php$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

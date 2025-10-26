@@ -51,4 +51,5 @@ include 'connect.php';
             box-shadow:10px 10px 10px -1px rgba(10,99,169,0.16),-10px -10px 10px -1px rgba(269,267,269,0.70);font-size:30px;"><a href="home.php" style="color:red">BACK</a>
       </button>
 </body>
-</html>       
+</html>
+       

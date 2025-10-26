@@ -12,7 +12,7 @@
       <div class="service-top">
         <h1 class="section-title">Serv<span>i</span>ces</h1>
         <p>THERE ARE FOUR TYPE OF SERVICES......PUBLIC BUS,PRIVATE BUS,FREE PUBLIC BUS,SPECIAL BUS,SEARCH TIME AND BUS IN SERVICES.
-            SAPARATE THE BUS NAME,BUS NO,REACH TIME,SENDOFF TIME.</p>
+            SAPARATE THE BUS NAME,BUS NO, REACH TIME,SENDOFF TIME.</p>
       </div>
       <div class="service-bottom">
         <div class="service-item">
@@ -43,4 +43,3 @@
   </section>
 </body>
 </html>
-  <!-- End Service Section -->
