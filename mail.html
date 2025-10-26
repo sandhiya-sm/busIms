@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <form onsubmit="sendEmail(); reset(); return false;" >
+            <input type="text" id="name" placeholder="your name" required>
+            <input type="email" id="email" placeholder="Mail-id" required>
+            <input type="text" id="phone" placeholder="Mobil number" required>
+            <textarea id="message" rows="5" placeholder="Feedback/How can i help you?" required></textarea>
+            <button type="submit">SEND </button>
+        </form>
+    </body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>  
+     function sendEmail(){
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+     }
+    </script>
+    </body>
+</html>
